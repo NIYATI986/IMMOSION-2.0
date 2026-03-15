@@ -19,6 +19,3 @@ export const getEmotionalSupport = async (emotion, customEmotion = "") => {
   return emotionResponses[emotion] || defaultResponse;
 };
 
-export const getAITypingParagraph = async () => {
-  return null;
-};
