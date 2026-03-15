@@ -57,7 +57,6 @@ export default function Landing({ onSelect }) {
             onClick={() => onSelect("emotion")}
           >
             <div style={styles.cardGlow} />
-            <div style={styles.cardIcon}>🌸</div>
             <h2 style={styles.cardTitle}>Emotion Mode</h2>
             <p style={styles.cardDesc}>
               Tell us how you feel. Receive a handcrafted message of support,
@@ -71,7 +70,6 @@ export default function Landing({ onSelect }) {
             onClick={() => onSelect("typing")}
           >
             <div style={{ ...styles.cardGlow, ...styles.cardGlowBlue }} />
-            <div style={styles.cardIcon}>⌨️</div>
             <h2 style={styles.cardTitle}>Typing Mode</h2>
             <p style={styles.cardDesc}>
               30 seconds. Every keystroke counts. Discover your WPM, sharpen
@@ -152,7 +150,6 @@ const styles = {
   cardGlowBlue: {
     background: "radial-gradient(circle, rgba(59,130,246,0.25) 0%, transparent 70%)",
   },
-  cardIcon: { fontSize: "2.5rem", marginBottom: 20 },
   cardTitle: {
     fontFamily: "'Playfair Display', serif",
     fontSize: "1.5rem", fontWeight: 700,

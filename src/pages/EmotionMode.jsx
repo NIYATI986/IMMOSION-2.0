@@ -286,8 +286,9 @@ const styles = {
   supportText: {
     color: "rgba(255,255,255,0.85)",
     fontSize: "1.05rem", lineHeight: 1.85,
-    fontFamily: "'Playfair Display', serif",
-    fontStyle: "italic", marginBottom: 28, minHeight: 60,
+    fontFamily: "'Courier New', Courier, monospace",
+    fontStyle: "normal", marginBottom: 28, minHeight: 60,
+    letterSpacing: "0.03em",
   },
   feedbackGrid: {
     display: "grid",
