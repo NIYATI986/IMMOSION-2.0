@@ -1,6 +1,6 @@
 // src/pages/EmotionMode.jsx
 import { useState } from "react";
-import { getEmotionalSupport } from "../utils/claudeApi";
+import { getEmotionalSupport } from "../utils/emotionResponses";
 
 const EMOTIONS = [
   { key: "happy", label: "Happy", emoji: "😊", color: "#f59e0b" },
