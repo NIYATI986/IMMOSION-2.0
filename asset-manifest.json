@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/IMMOSION-2.0/static/js/main.9f224d21.js",
+    "main.js": "/IMMOSION-2.0/static/js/main.916fae70.js",
     "index.html": "/IMMOSION-2.0/index.html",
-    "main.9f224d21.js.map": "/IMMOSION-2.0/static/js/main.9f224d21.js.map"
+    "main.916fae70.js.map": "/IMMOSION-2.0/static/js/main.916fae70.js.map"
   },
   "entrypoints": [
-    "static/js/main.9f224d21.js"
+    "static/js/main.916fae70.js"
   ]
 }
