@@ -1,0 +1,24 @@
+// src/utils/claudeApi.js
+
+const emotionResponses = {
+  happy: "It's absolutely wonderful that you're feeling happy today! Happiness is one of the most powerful forces in the universe, and you deserve every bit of it. Let this feeling remind you of how far you've come, how much you've grown, and how many beautiful moments life still has in store for you. Your joy is contagious — it touches everyone around you without you even realizing it. Cherish this feeling, breathe it in deeply, and let it fuel your energy for the days ahead. You are a source of light, and the world is genuinely better because you are in it feeling this way today. Keep shining, keep smiling — this happiness is yours and you have earned every single drop of it.",
+
+  sad: "It's okay to feel sad — your feelings are completely valid and you don't have to pretend otherwise. Sadness is not a weakness; it is proof that you have loved, cared, and felt deeply. Allow yourself to sit with this feeling without judgment, because healing begins the moment we stop running from our emotions. You have survived every difficult day so far, and that makes you incredibly strong even when you don't feel like it. This season will pass, and brighter days are quietly making their way toward you. You are not alone in this. You are seen, you are valued, and you are so deeply worthy of love and peace. Tomorrow holds something softer for you — hold on just a little longer.",
+
+  anxious: "Feeling anxious can be truly exhausting, and it takes real courage to acknowledge it. Your mind is working overtime trying to protect you, but please know that you are safe right now in this moment. Take a slow, deep breath — in through your nose, out through your mouth. You have handled uncertainty before and you have come through it. You are more resilient than your anxiety wants you to believe. One moment at a time is all you need to focus on. You don't have to solve everything today. Be gentle with yourself, because you are doing the best you can, and that is always more than enough. You are steadier than you feel right now, and this wave will pass.",
+
+  motivated: "You came here looking for motivation, and that itself tells me something powerful about you — you refuse to give up. That fire inside you, however small it may feel right now, is real and it is yours. Every great achievement in history started with someone who simply decided to keep going despite the doubt and the fear. You have something unique to offer this world that nobody else can. The path may feel unclear, but every single step forward counts. Don't compare your chapter one to someone else's chapter ten. Believe in the process, trust your effort, and know that the version of you that you're working toward is absolutely worth it. Now take that first step — the momentum will follow.",
+
+  lonely: "Loneliness can feel like the heaviest silence, and I want you to know that your feelings are completely understood. Even in a world full of people, feeling alone is one of the most human experiences there is — you are not strange for feeling this way. You matter deeply, even when it doesn't feel like anyone notices. The connections you seek are out there, and you deserve relationships that are warm, genuine, and fulfilling. For now, be the kind friend to yourself that you would be to someone you love. You are whole on your own, and your presence in this world has more meaning and value than you may currently see. Someone out there is yet to meet you and will be so glad that they did.",
+};
+
+const defaultResponse = "Whatever you are feeling right now is completely valid. Your emotions are messengers, not enemies — they are telling you something important about what you need. You have an incredible strength within you that has carried you through every challenge life has thrown your way, even when it felt impossible. The fact that you are here, seeking support and self-awareness, speaks volumes about your courage and your desire to grow. Please be gentle with yourself today. You deserve the same compassion you would offer a dear friend. Your story is not over — in fact, some of your most beautiful chapters are still being written. Keep going, because the world needs exactly the kind of person you are becoming.";
+
+export const getEmotionalSupport = async (emotion, customEmotion = "") => {
+  await new Promise(res => setTimeout(res, 1200));
+  return emotionResponses[emotion] || defaultResponse;
+};
+
+export const getAITypingParagraph = async () => {
+  return null;
+};
